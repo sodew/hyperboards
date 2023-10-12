@@ -88,6 +88,8 @@ export const useRegistryContents = (registryId: string) => {
   });
 };
 
+//TODO: log what comes back when successful. see what currently comes back. create a JSON.
+//TODO: abhi subgraph calls
 const getRegistryWithClaims = async (registryId: string) =>
   supabase
     .from("registries-optimism")

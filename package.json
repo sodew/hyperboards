@@ -29,7 +29,7 @@
     "@tanstack/react-query": "^4.33.0",
     "@tanstack/react-query-devtools": "^4.33.0",
     "@types/node": "20.5.6",
-    "@types/react": "18.2.21",
+    "@types/react": "18.2.28",
     "@types/react-dom": "18.2.7",
     "d3": "^7.8.5",
     "eslint": "8.48.0",
@@ -44,7 +44,7 @@
     "supabase": "^1.93.0",
     "typescript": "5.2.2",
     "viem": "^1.10.3",
-    "wagmi": "^1.4.1"
+    "wagmi": "1.4"
   },
   "devDependencies": {
     "@types/d3": "^7.4.0",
