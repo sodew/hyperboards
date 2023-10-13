@@ -28,6 +28,7 @@ export const Hyperboard = (props: HyperboardProps) => {
 
   const padding = 1;
 
+  //how is value determined?
   const formattedData = {
     name: "root",
     image: "",
