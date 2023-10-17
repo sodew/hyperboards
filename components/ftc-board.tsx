@@ -15,12 +15,11 @@ export const FtcBoard = ({ registryId }: { registryId: string }) => {
   const dimensions = useSize(containerRef);
 
   const [displayBoards, setDisplayBoards] = useState<
-    "sponsors" | "speakers" | "all"
-  >("all");
+    "sponsors" | "speakers" | "all">("all");
 
   //const { data: results, isLoading } = useRegistryContents(registryId);
   const { data: results, isLoading } = useRegistryContentsMock(registryId);
-  
+
   const data = results?.content || {};
 
   const sponsors = Object.values(data).filter(
