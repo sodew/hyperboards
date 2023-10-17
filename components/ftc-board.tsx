@@ -3,6 +3,7 @@ import { useSize } from "@chakra-ui/react-use-size";
 import {
   registryContentItemToHyperboardEntry,
   useRegistryContents,
+  useRegistryContentsMock,
 } from "@/hooks/registry";
 import { Center, Flex, Spinner } from "@chakra-ui/react";
 import { Hyperboard } from "@/components/hyperboard";
@@ -17,8 +18,9 @@ export const FtcBoard = ({ registryId }: { registryId: string }) => {
     "sponsors" | "speakers" | "all"
   >("all");
 
-  const { data: results, isLoading } = useRegistryContents(registryId);
-
+  //const { data: results, isLoading } = useRegistryContents(registryId);
+  const { data: results, isLoading } = useRegistryContentsMock(registryId);
+  
   const data = results?.content || {};
 
   const sponsors = Object.values(data).filter(
