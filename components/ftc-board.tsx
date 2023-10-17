@@ -17,8 +17,11 @@ export const FtcBoard = ({ registryId }: { registryId: string }) => {
   const [displayBoards, setDisplayBoards] = useState<
     "sponsors" | "speakers" | "all">("all");
 
+  //const [displayBoards, setDisplayBoards] = useState("all");
+
   //const { data: results, isLoading } = useRegistryContents(registryId);
   const { data: results, isLoading } = useRegistryContentsMock(registryId);
+  console.log(results)
 
   const data = results?.content || {};
 
