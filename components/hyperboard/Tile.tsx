@@ -110,7 +110,7 @@ export const Tile = ({
                 color={logosAndText}
                 opacity={"50%"}
                 fontFamily={"Switzer"}
-                noOfLines={1}
+              // noOfLines={1}
               >
                 {entry.companyName}
               </Text>
@@ -125,6 +125,7 @@ export const Tile = ({
             marginBottom={"auto"}
             src={entry.image}
             alt={"Test alt"}
+            padding={2}
             height={`${layout.image}px`}
             width={`${layout.image}px`}
             maxWidth={`${layout.image}px`}
