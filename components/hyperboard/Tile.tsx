@@ -134,6 +134,7 @@ export const Tile = ({
       </Wrapper>
     );
   }
+  return null;
 };
 
 const Wrapper = ({
